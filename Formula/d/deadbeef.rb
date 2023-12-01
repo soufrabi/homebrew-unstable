@@ -14,7 +14,7 @@ class Deadbeef < Formula
     (bin/"deadbeef").write <<~EOS
       #!/bin/sh
 
-      $HOMEBREW_PREFIX/bin/deadbeef-binary
+      $HOMEBREW_PREFIX/bin/deadbeef-binary "$@"
     EOS
 
   end
