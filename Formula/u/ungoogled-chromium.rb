@@ -25,7 +25,7 @@ class UngoogledChromium < Formula
     #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system "#{bin}/program", "do", "something"`.
-        assert_match "爱", shell_output("#{bin}/fanyi --no-say love 2>/dev/null")
+        assert_match "Chromium", shell_output("#{bin}/chrome --version 2>/dev/null")
 
     # system "false"
   end
