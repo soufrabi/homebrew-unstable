@@ -1,26 +1,18 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class UngoogledChromium < Formula
   desc "ungoogled version of chromium"
   homepage "https://github.com/ungoogled-software/ungoogled-chromium"
   url "https://github.com/ungoogled-software/ungoogled-chromium-portablelinux/releases/download/119.0.6045.123-1/ungoogled-chromium_119.0.6045.123-1.1_linux.tar.xz"
   sha256 "ed18d44322aab81dbe5ed568ccfea429b8972fa1bbfcb10bb65fbee5b107ccc2"
   license "BSD-2-Clause"
+  version "119.0.0"
 
   # depends_on "cmake" => :build
 
   def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
-    # Remove unrecognized options if warned by configure
-    # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
-    # system "./configure", *std_configure_args, "--disable-silent-rules"
-    # bin.install "chrome"
-    # bin.install "chromedriver"
-    # prefix.install "*"
-    bin.mkdir
     prefix.install Dir["*"]
-    # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
+    mkdir_p bin
+    bin.install_symlink "#{prefix}/chrome"
+    bin.install_symlink "#{prefix}/chromedriver"
   end
 
   test do
@@ -33,6 +25,8 @@ class UngoogledChromium < Formula
     #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system "#{bin}/program", "do", "something"`.
-    system "false"
+        assert_match "爱", shell_output("#{bin}/fanyi --no-say love 2>/dev/null")
+
+    # system "false"
   end
 end
