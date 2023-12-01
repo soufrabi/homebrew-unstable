@@ -1,6 +1,11 @@
-# Homebrew Tap
+# Soufrabi Soufrabi
 
-Add tap using
-```sh
-brew tap soufrabi/soufrabi
-```
+## How do I install these formulae?
+
+`brew install soufrabi/soufrabi/<formula>`
+
+Or `brew tap soufrabi/soufrabi` and then `brew install <formula>`.
+
+## Documentation
+
+`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
