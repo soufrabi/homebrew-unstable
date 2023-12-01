@@ -18,6 +18,7 @@ class UngoogledChromium < Formula
     # bin.install "chrome"
     # bin.install "chromedriver"
     # prefix.install "*"
+    bin.mkdir
     prefix.install Dir["*"]
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
   end
