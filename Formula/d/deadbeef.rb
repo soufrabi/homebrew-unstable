@@ -1,4 +1,4 @@
-class DeaDBeeF < Formula
+class DeadBeef < Formula
   desc "Music Player"
   homepage "https://github.com/DeaDBeeF-Player/deadbeef"
   url "https://sourceforge.net/projects/deadbeef/files/travis/linux/1.9.6/deadbeef-static_1.9.6-1_x86_64.tar.bz2/download"
