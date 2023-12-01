@@ -1,10 +1,10 @@
-# Soufrabi Soufrabi
+# Soufrabi Exp
 
 ## How do I install these formulae?
 
-`brew install soufrabi/soufrabi/<formula>`
+`brew install soufrabi/exp/<formula>`
 
-Or `brew tap soufrabi/soufrabi` and then `brew install <formula>`.
+Or `brew tap soufrabi/exp` and then `brew install <formula>`.
 
 ## Documentation
 
