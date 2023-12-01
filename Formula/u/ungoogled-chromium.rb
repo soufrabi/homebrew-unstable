@@ -6,7 +6,6 @@ class UngoogledChromium < Formula
   sha256 "ed18d44322aab81dbe5ed568ccfea429b8972fa1bbfcb10bb65fbee5b107ccc2"
   license "BSD-2-Clause"
 
-  # depends_on "cmake" => :build
 
   def install
     prefix.install Dir["*"]
