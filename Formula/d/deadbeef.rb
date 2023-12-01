@@ -9,7 +9,14 @@ class Deadbeef < Formula
   def install
     prefix.install Dir["*"]
     mkdir_p bin
-    bin.install_symlink "#{prefix}/deadbeef"
+    bin.install_symlink "#{prefix}/deadbeef" => "deadbeef-binary"
+
+    (bin/"deadbeef").write <<~EOS
+      #!/bin/sh
+
+      $HOMEBREW_PREFIX/bin/deadbeef-binary
+    EOS
+
   end
 
   test do
