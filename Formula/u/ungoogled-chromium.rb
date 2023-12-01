@@ -15,8 +15,8 @@ class UngoogledChromium < Formula
     # Remove unrecognized options if warned by configure
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
     # system "./configure", *std_configure_args, "--disable-silent-rules"
-    bin.install "chrome"
-    bin.install "chromedriver"
+    # bin.install "chrome"
+    # bin.install "chromedriver"
     # prefix.install "*"
     prefix.install Dir["*"]
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
