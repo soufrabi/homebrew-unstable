@@ -17,7 +17,7 @@ class UngoogledChromium < Formula
     # system "./configure", *std_configure_args, "--disable-silent-rules"
     bin.install "chrome"
     bin.install "chromedriver"
-    prefix.install "*"
+    # prefix.install "*"
     prefix.install Dir["*"]
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
   end
