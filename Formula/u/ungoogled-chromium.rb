@@ -2,7 +2,7 @@ class UngoogledChromium < Formula
   desc "Ungoogled version of chromium"
   homepage "https://github.com/ungoogled-software/ungoogled-chromium"
   url "https://github.com/ungoogled-software/ungoogled-chromium-portablelinux/releases/download/119.0.6045.123-1/ungoogled-chromium_119.0.6045.123-1.1_linux.tar.xz"
-  version "119.0.0"
+  version "119.0.1"
   sha256 "ed18d44322aab81dbe5ed568ccfea429b8972fa1bbfcb10bb65fbee5b107ccc2"
   license "BSD-2-Clause"
 
