@@ -1,4 +1,4 @@
-# Soufrabi Beta
+# Homebrew Tap Beta
 
 ## How do I install these formulae?
 
