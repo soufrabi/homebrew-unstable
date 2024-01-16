@@ -1,10 +1,10 @@
-# Homebrew Tap Beta
+# Homebrew Tap
 
 ## How do I install these formulae?
 
-`brew install soufrabi/beta/<formula>`
+`brew install soufrabi/unstable/<formula>`
 
-Or `brew tap soufrabi/beta` and then `brew install <formula>`.
+Or `brew tap soufrabi/unstable` and then `brew install <formula>`.
 
 ## Documentation
 
